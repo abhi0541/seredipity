@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="employee.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<header>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="navbar-title">
+            <span>SERINDIPITY</span>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
+
+</header>
+<body>
+    <div class="main-content">
+        <!-- Profile Section -->
+        <div class="employee-info">
+            <div class="profile-card">
+                <img src="https://i.pinimg.com/564x/26/e6/23/26e6237651d3b543359b02f0d9cceaee.jpg" alt="Profile" class="profile-pic">
+                <h3>Samaira</h3>
+                <p>Software Developer</p>
+            </div>
+            <div class="info-card">
+                <h3>Information</h3>
+                <p><strong>Email:</strong> samairatech@gmail.com</p>
+                <p><strong>Employee ID:</strong> EMP 1503</p>
+                <p><strong>Status:</strong></p>
+                <p>Monthly tasks allotted: 8</p>
+                <p>Weekly tasks allotted: 2</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <!-- Task List Section -->
+        <div class="task-list">
+            <h3>Monthly Tasks</h3>
+            <ul>
+                <li>Complete UI design for Project X</li>
+                <li>Attend team meeting on Thursday</li>
+            </ul>
+
+            <h3>Weekly Tasks</h3>
+            <ul id="weekly-tasks"></ul>
+        </div>
+
+        <!-- Meet the Team Section -->
+        <section class="team">
+            <h1>Team Members </h1>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="https://i.pinimg.com/564x/a6/34/34/a63434e83afd75c592b81d9775e44277.jpg" alt="Designer">
+                    <div class="role"> UX/UI Designer</div>
+                    <div class="name">Name: Ananya</div>
+                    <p>I’m excited to dive into this project and collaborate on creating intuitive 
+                        and visually stunning experiences for our users. Let’s make something amazing together</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.pinimg.com/564x/96/5b/f0/965bf0ffaa83d1a76d7bcaf9c30c9436.jpg" alt="Developer">
+                    <div class="role"> Front-End Developer</div>
+                    <div class="name">Name: Arjun</div>
+                    <p>I am a skilled developer specializing in front-end technologies and problem-solving.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.pinimg.com/564x/3f/4b/cd/3f4bcd8a42877276895c8faf702f5773.jpg" alt="QA Engineer">
+                    <div class="role">QA ENGINEER</div>
+                    <div class="name">Name: Ishita</div>
+                    <p>I’m ready to dive into testing and ensure that every detail meets our quality standards. 
+                        Let’s make sure our product is flawless before it reaches our users</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <!-- Projects Section -->
+        <div class="projects-section">
+            <center><h1>On going projects</h1></center>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="https://i.pinimg.com/564x/ba/1c/ba/ba1cbae861354dea763df37b4b7acefd.jpg" alt="Website Redesign">
+                    <h3>Project 1: Sustainable Packaging Initiative</h3>
+                    <p><strong>Status:</strong> Ongoing</p>
+                    <p><strong>Deadline:</strong> 2030 (Target for 100% eco-designed packaging)</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://i.pinimg.com/564x/99/8c/dd/998cdd7ffe2625fd5d06328c689f11b7.jpg" alt="Mobile App Development">
+                    <h3>Project 2: Personalized Beauty through AI</h3>
+                    <p><strong>Status:</strong> In market; ongoing global rollout</p>
+                    <p><strong>Deadline:</strong>  2030</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://i.pinimg.com/564x/64/ea/a3/64eaa3633408076182d2ec0f0409962f.jpg" alt="New Feature Implementation">
+                    <h3>Project 3: Sustainable Ingredients Sourcing</h3>
+                    <p><strong>Status:</strong> Ongoing</p>
+                    <p><strong>Deadline:</strong> 2025 (Target for 100% sustainably sourced key ingredients)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="employee.js"></script>
+</body>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Serendipity. All Rights Reserved.</p>
+    </footer>
+
+</html>

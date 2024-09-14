@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function redirectToDashboard(event) {
+            event.preventDefault(); 
+            const email = document.querySelector('input[type="email"]').value;
+            const password = document.querySelector('input[type="password"]').value;
+            const dashboard = document.getElementById('dashboardSelect').value;
+
+        
+            if (email && password) {
+                if (dashboard === 'trainer') {
+                    window.location.href = 'employee.html';
+                } else if (dashboard === 'user') {
+                    window.location.href = 'admin.html';
+                } else {
+                    alert('Please select a dashboard.');
+                }
+            } else {
+                alert('Please enter both email and password.');
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div class="background">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form onsubmit="redirectToDashboard(event);">
+                <div class="textbox">
+                    <input type="email" placeholder="Enter E-mail" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Enter Password" required>
+                </div>
+                <div class="textbox">
+                    <select id="dashboardSelect" required>
+                        <option value="" disabled selected>Select Dashboard</option>
+                        <option value="trainer">Employee Dashboard</option>
+                        <option value="user">Admin Dashboard</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

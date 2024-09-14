@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1C1E26, #2E3B43); /* Gradient matching the theme */
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.login-box {
+    width: 350px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #FF6F61; /* Soft pink */
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input, .textbox select {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 1px solid #BDBDBD; /* Light gray */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Dark gray */
+}
+
+.btn {
+    background: #FF6F61; /* Soft pink */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #F05545; /* Hover color */
+}

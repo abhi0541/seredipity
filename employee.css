@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Elegant font to match the logo */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #333845; /* Dark background to match the logo */
+    color: #E0E0E0;
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: #3B4148; /* Matching the logo's background */
+    color: #E0E0E0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+    height: 70px; /* Professional navbar height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #E29578; /* Peach accent to complement logo */
+    letter-spacing: 2px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-links li {
+    font-size: 18px;
+}
+
+.navbar-links li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #E29578; /* Peach hover effect */
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 80px; /* Adjust to avoid overlap with navbar */
+    padding: 50px;
+    width: 100%;
+}
+
+/* Profile Section */
+.employee-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2A2D38;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card {
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+    border-right: 2px solid #E29578;
+}
+
+.profile-card .profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card h3 {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    color: #E0E0E0;
+    font-size: 16px;
+}
+
+.info-card {
+    padding: 20px;
+    width: 65%;
+}
+
+.info-card h3 {
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E29578;
+    padding-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #E0E0E0;
+}
+
+/* Task List */
+.task-list h3 {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E29578;
+    padding-bottom: 5px;
+}
+
+.task-list ul {
+    list-style-type: none;
+}
+
+.task-list ul li {
+    padding: 12px;
+    background-color: #2A2D38;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #E0E0E0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-list ul li:hover {
+    background-color: #E29578; /* Hover effect for tasks */
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: #333845;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #E29578;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #2A2D38;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.team-member img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.team-member img:hover {
+    transform: rotate(360deg); /* Rotation effect on hover */
+}
+
+.team-member .role {
+    font-weight: bold;
+    color: #E29578;
+    margin-bottom: 10px;
+}
+
+.team-member .name {
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects-section {
+    margin-top: 40px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
+    background-color: #2A2D38;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1C1E26; /* Same background color as the navbar */
+    color: #E0E0E0;
+    text-align: center;
+    padding: 15px 0;
+ 
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    margin: 0;
+    color: #E29578; /* Peach accent for branding */
+}
